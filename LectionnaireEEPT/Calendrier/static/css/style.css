@@ -1,0 +1,175 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Times New Roman', Times, serif;
+  padding: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+#img_menu{
+  display: none;
+}
+
+.container {
+  animation:fadeInUp 1s ease backwards;
+}
+
+.nav_bar{
+  background-color: #f2f2f2;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav_bar a{
+  color: #000;
+  background-color: rgba(47, 47, 233, 0.527) ;
+  text-decoration: none;
+  padding: 1em;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+
+
+@keyframes fadeInUp{
+  0%{transform:translate(0px, 100px); opacity: 0;}
+  100%{transform:translate(0px, 0); opacity: 1;}
+}
+
+
+.introduction{
+  margin-top: 3rem;
+  animation:fadeInUp 1s ease backwards;
+}
+
+.introduction h1{
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(20, 20, 53);
+  text-align: center;
+}
+
+.introduction a{
+  background-color: blue;
+  color: white;
+  padding: 1em;
+  margin: 5em;
+  text-decoration: none;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 50px;
+}
+
+.intro_img{
+  float: right;
+  width: 100%;
+  height: 80%;
+  aspect-ratio: 1/1;
+}
+
+.intro_img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#last{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  align-items: center;
+}
+
+#img2 img{
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 30px;
+}
+
+form{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+  justify-content: center;
+}
+
+form input{
+  width: 100%;
+  height: 3rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  padding: 1rem;
+}
+
+form button{
+  width: 100%;
+  height: 3rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+textarea{
+  width: 100%;
+  height: 5rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  resize: none;
+  padding: 1rem;
+}
+.footer{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  background-color:rgb(20, 20, 53);
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+
+  .nav_bar a{
+    margin-top: 0.5rem;
+  }
+
+  #img2_txt{
+    margin-top: 3rem;
+  }
+
+  .intro_img img{
+    margin-top: 3rem;
+  }
+
+  #img_menu{
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    float: right;
+    transform: translateY(-5rem);
+  }
+
+  #nav_bar_link{
+    margin-top: 0rem;
+    transform: translateY(-3rem);
+    transition: max-height 0.9s ease-in-out;
+    display: none;    
+  }
+  
+  .footer{
+    height: fit-content;
+  }
+
+}
